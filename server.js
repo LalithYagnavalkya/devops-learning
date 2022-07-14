@@ -3,11 +3,12 @@ const cors = require("cors");
 const app = express();
 
 // app.use(express.json());
+const port = 3001;
 
 app.get("/", (req, res) => {
   res.send("wtf is wrong");
 });
 
-app.listen(3001, () => {
-  console.log("this is running on port 5000");
+app.listen(port, () => {
+  console.log(`this is running on port ${port}`);
 });
