@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
   res.send("wtf is wrong");
 });
 
-app.listen(5000, () => {
+app.listen(3001, () => {
   console.log("this is running on port 5000");
 });
