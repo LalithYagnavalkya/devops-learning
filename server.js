@@ -4,13 +4,10 @@ const app = express();
 app.use(cors());
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "http://devops-react.vercel.app/", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "http://devops-react.vercel.app/"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   // Request methods you wish to allow
   res.setHeader(
